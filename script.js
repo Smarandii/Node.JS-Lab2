@@ -10,7 +10,7 @@ loginBtn.addEventListener("click", (e) => {
     e.preventDefault()
     console.log(login.value);
     console.log(password.value);
-    const rawResponeNEW = fetch('v1/authorization', {
+    const rawRespone = fetch('v1/authorization', {
         method: 'POST',
         body: JSON.stringify({"password": password.value, "login": login.value})
     });
